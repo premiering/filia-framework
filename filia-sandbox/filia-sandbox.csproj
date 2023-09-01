@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\filia-framework\filia-framework.csproj" />
+	  <Content Include="assets/**" Link="assets/%(RecursiveDir)/%(Filename)%(Extension)">
+		  <PackagePath>assets/</PackagePath>
+		  <Pack>true</Pack>
+		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Content>
+  </ItemGroup>
+
+</Project>
