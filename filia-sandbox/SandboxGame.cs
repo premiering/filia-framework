@@ -21,7 +21,7 @@ namespace FiliaSandbox
         {
             var scene = new Node();
             LoadModelToNode(scene, Renderer.ModelLoader.LoadModel("assets/ac house red.obj"));
-            scene.AddChild(new FreeflyCamera());
+            scene.AddChild(new FreeflyCamera3D());
             Renderer.RootNode = scene;
         }
 

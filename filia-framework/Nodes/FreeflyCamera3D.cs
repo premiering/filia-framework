@@ -11,9 +11,9 @@ using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FiliaSandbox
+namespace FiliaFramework.Nodes
 {
-    public class FreeflyCamera : Camera3D
+    public class FreeflyCamera3D : Camera3D
     {
         private IInputManager _inputManager;
 
